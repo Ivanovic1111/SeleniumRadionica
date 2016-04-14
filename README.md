@@ -4,9 +4,9 @@ The  test automation labs are organized into following workshops where each one 
 
 [workshop1: Security – web applications pentesting (aka. hacking)]
 
-[workshop2: Behavior Driven Testing]
+[workshop2: Selenium WebDriver and Selenium Framework]
 
-[workshop3: Selenium WebDriver and Selenium Framework]
+[workshop3: Behavior Driven Testing]
 
 [workshop4: Selenium Grid; Modern SW Environment; Client-side performance tracking]
 
