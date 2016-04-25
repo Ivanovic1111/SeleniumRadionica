@@ -2,13 +2,13 @@
 
 The  test automation labs are organized into following workshops where each one covers set of specific subjects:
 
-[workshop1: Security – web applications pentesting (aka. hacking)]
+[workshop1: Security – web applications pentesting (aka. hacking)](https://gitlab.levi9.com/qa/Code9-2016/tree/master/workshop1/)
 
-[workshop2: Selenium WebDriver and Selenium Framework]
+[workshop2: Selenium WebDriver and Selenium Framework](https://gitlab.levi9.com/qa/Code9-2015/tree/master/workshop2/)
 
-[workshop3: Behavior Driven Testing]
+[workshop3: Behavior Driven Testing](https://gitlab.levi9.com/qa/Code9-2015/tree/master/workshop3/)
 
-[workshop4: Selenium Grid; Modern SW Environment; Client-side performance tracking]
+[workshop4: Selenium Grid; Modern SW Environment; Client-side performance tracking](https://gitlab.levi9.com/qa/Code9-2015/tree/master/workshop4/)
 
 The first workshop shares only the word ‘testing’ with the other workshops. It is focused on testing of the security of web application. You will learn basics of Linux, networks, protocols, architecture of web applications, so as which tools are used for testing and how to use them to discover vulnerabilities in a web application.
 
