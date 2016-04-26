@@ -62,6 +62,8 @@ The [OWASP Top Ten](https://www.owasp.org/index.php/Top_10_2013-Top_10 "OWASP To
 **This step\-by\-step walkthrough refers to Kali linux.**
 
 1. start the ***firefox*** by using `<ALT>+<F2>` and type in `firefox`
+
+    ![](img/readme/run_firefox.PNG)
 2. by using ***firefox*** google for ***foxyproxy*** plugin and follow the install instructions
 
 ## 10. Setting up Foxyproxy ##
