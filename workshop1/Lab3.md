@@ -51,11 +51,11 @@ Burpsuite's default settings are defined to run on localhost (127.0.0.1), port 8
 6. To fetch column names from specific table, from specific database, use following command `sqlmap -r '<path-to-request-file>' -p <parameter-name> -D <database-name> -T <table-name> --columns` and execute
 
 ## 5. XSS atack##
-1. In navigation menu on the left, navigate to *OWASP 2013 > A3 - Cross Site Scripting (XSS) > Reflected (First Order0 > DNS Lokup*
+1. In navigation menu on the left, navigate to *OWASP 2013 > A3 - Cross Site Scripting (XSS) > Reflected (First Order) > DNS Lokup*
 
     ![](img/lab3/dns_lookup.PNG)
 
-2. Enter XSS code `<scirpt>alert("Pwnd!");</script>` into input field and click *Lookup DNS*
+2. Enter XSS code `<script>alert("Pwnd!");</script>` into input field and click *Lookup DNS*
 
     ![](img/lab3/pwnd.PNG)
 
