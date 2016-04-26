@@ -58,53 +58,11 @@ More about directory (path) traversal atacks could be found [here](http://www.ac
 
 The [OWASP Top Ten](https://www.owasp.org/index.php/Top_10_2013-Top_10 "OWASP Top Ten") is a list of the 10 most dangerous current Web application security flaws, along with effective methods of dealing with those flaws. OWASP (Open Web Application Security Project) is an organization that provides unbiased and practical, cost\-effective information about computer and Internet applications. Project members include a variety of security experts from around the world who share their knowledge of vulnerabilities, threats, attacks and countermeasures.
 
-## 9. Installing Chromium, Firefox + plugins (foxyproxy) ##
+## 9. Installing Firefox plugins (foxyproxy) ##
 **This step\-by\-step walkthrough refers to Kali linux.**
 
-**Installing chromium**
-
-1. start the virtual console:
-
-    ![](img/readme/start_virtual_console.PNG)
-2. type: `sudo apt-get install chromium` and press `<enter>`
-
-    ![](img/readme/sudo_apt_get_install__chromium.png)
-3. if asked, enter password and pres `<enter>`
-4. if asked, confirm installation with `<enter>`
-
-**Installing firefox**
-
-1. start the ***chromium*** by pressing `<ALT>+<F2>` and then type in `chromium`
-
-    ![](img/readme/run_chromium.PNG)
-2. browse for ***Mozilla Firefox*** and download the tar.gz archive to the ***Downloads*** folder
-
-    ![](img/readme/downloads_folder.PNG)
-3. start the virtual console
-4. navigate to the ***Downloads*** folder by typing: `cd ~/Downloads/` and press `<enter>`
-
-    ![](img/readme/navigate_to_downloads.PNG)
-5. unpack the archive with command: `tar xvjf <filename>` and press `<enter>`
-
-    ![](img/readme/tar_xvjf.PNG)
-6. move the ***firefox*** folder to the */usr/share* with command: `sudo mv firefox/ /usr/share/`
-
-    ![](img/readme/sudo_mv.PNG)
-7. create new file named ***firefox.real*** inside ***/usr/bin/*** with command: `sudo vi /usr/bin/firefox.real`
-
-    ![](img/readme/sudo_vi.PNG)
-8. inside the editor press `i` to get into the interactive mode
-9. type in the following:<br/>
-  ` #!/bin/bash`<br/>
-   `/usr/share/firefox/firefox`<br/>
-10. save the file by pressing keys in this order: `<escape>`, followed by colon (`:`), then type in the letters `wq` and press `<enter>`
-
-    ![](img/readme/text_editor.PNG)
-11. enable the execution of the script with command: `sudo chmod +x /usr/bin/firefox.real` and press `<enter>`
-
-    ![](img/readme/sudo_chmod.PNG)
-12. start the ***firefox*** by using `<ALT>+<F2>` and type in `firefox`
-13. by using ***firefox*** google for ***foxyproxy*** plugin and follow the install instructions
+1. start the ***firefox*** by using `<ALT>+<F2>` and type in `firefox`
+2. by using ***firefox*** google for ***foxyproxy*** plugin and follow the install instructions
 
 ## 10. Setting up Foxyproxy ##
 [Foxyproxy](http://getfoxyproxy.org/ "getfoxyproxy: Foxyproxy") is a set of proxy and VPN management tools for OS/X, Windows, iOS, Android, Chrome, Firefox, and Linux.
