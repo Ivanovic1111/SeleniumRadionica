@@ -69,9 +69,37 @@ How to do it:
  
 ###Version control software - Git
 
-#todo
+There are two types of version control systems
 
-###Continuous Delivery – automated tests as part of the deployment pipeline.
+![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png)
+
+![](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
+
+
+**Advantages** over centralized systems:
+
+- Performing actions other than pushing and pulling changesets is extremely fast because the tool only needs to access the hard drive, not a remote server.
+- Committing new changesets can be done locally without anyone else seeing them. Once when a group of changesets is ready, it can pushed (all of them) at once.
+- Everything but pushing and pulling can be done without an internet connection. 
+- Since each programmer has a full copy of the project repository, they can share changes with one or two other people at a time if they want to get some feedback before showing the changes to everyone.
+
+**Disadvantages** over centralized systems::
+
+- If project contains many large files that cannot be easily compressed, the space needed to store all versions of these files can accumulate quickly.
+- If project has a very long history, downloading the entire history can take an impractical amount of time and disk space.
+
+**Git** is one of the most popular distributed version control systems. These systems do not necessarily rely on a central server to store all the versions of a project’s files. Instead, developers clone a copy of a repository and has the full history of the project on their own hard drive.
+
+
+![](https://git-scm.com/images/about/index1@2x.png)
+
+How to do it:
+
+1. Create own repository on gitlab 
+2. Push new code
+3. Add new files, edit existing (work in pair)
+
+###Continuous Delivery – automated tests as part of the deployment pipeline:
 
 #todo
 
