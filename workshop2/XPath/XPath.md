@@ -1,4 +1,4 @@
-#XPath
+# XPath
 
 XPath is the language used for **locating nodes** in an XML document. It models an XML document as a tree of nodes. As HTML can be an implementation of XML (XHTML), Selenium users can leverage this powerful language to target elements in their web applications.
 
@@ -14,7 +14,7 @@ You can use XPath to locate the element with:
 
 The result of an Xpath expression can be various data types, e.g. sets of nodes, a single node, a number, etc.
 
-###Firebug add-on for Firefox and FirePath extension
+### Firebug add-on for Firefox and FirePath extension
 
 It’s recommended to use Firebug add-on for Mozzila Firefox. This add-on allows the user to select the specific web element on a web page and Firebug will show the line of code that refers to that element. 
 To add the Firebug add-on for Firefox use the [link](https://addons.mozilla.org/en-US/firefox/addon/firebug/).
@@ -22,7 +22,7 @@ To add the Firebug add-on for Firefox use the [link](https://addons.mozilla.org/
 
 FirePath is a Firebug extension that adds a development tool to edit, inspect and generate XPath expressions. To add the FirePath use the [link](https://addons.mozilla.org/en-US/firefox/addon/firepath/).
 
-###Syntax
+### Syntax
 
 XPath uses path expressions to select nodes or node-sets in an XML document.  
 
@@ -63,7 +63,7 @@ The *“Clear” button* element can be located by using XPath expression:
 
 - "//form[@id='loginForm']/input[4]" - Fourth input child element of the form element with attribute named id and value loginForm
 
-###Exercises
+### Exercises
 
 With help of the locators table create XPath expressions for Albums.xml.
 
