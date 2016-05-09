@@ -94,6 +94,7 @@ There are two types of version control systems
 ![](https://git-scm.com/images/about/index1@2x.png)
 
 How to do it:
+update
 
 1. Create own repository on gitlab 
 2. Push new code
