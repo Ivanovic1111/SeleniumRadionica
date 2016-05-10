@@ -166,14 +166,6 @@ Some of elements provided by framework:
 
 **Task 1: Write test for add new Restaurant**  
 
-    Scenario:  Add a new restaurant
-    Given user is logged into application for Restaurant story
-    And user is on Restaurant page
-    When user populates new restaurant details
-    Then restaurant is in the list
-    When user clicks Logs Off in Restaurant scenario
-    Then user is logged off successfully from Restaurant scenario
-
 Steps:
 
 1. Open browser and log into the application using method from LoginPage
@@ -223,13 +215,15 @@ How to use it?
 
 **Task 2: Write test to verify that Name of restaurant is mandatory**
 
-    Scenario:  Add a new restaurant check name is mandatory
-    Given user is logged into application for Restaurant story
-    And user is on Restaurant page
-    When user populates all new restaurant details except name field
-    Then the name field is required message is displayed
-    When user clicks Logs Off in Restaurant scenario
-    Then user is logged off successfully from Restaurant scenario
+Steps:
+
+1. Open browser and log into the application using method from LoginPage
+2. Click on Restaurant link
+3. Fill all mandatory fields (except name field) to create new restaurant
+4. Click on Add button
+5. Assert the name field is required message is displayed
+6. Log off from Restaurant
+7. Assert user is logged off from Restaurant	
 
 ## Introduce ValidationHelper ##
 
@@ -251,13 +245,15 @@ Example:
 
 **Task 3: Write test to validate price when add new meal**
 
-    Scenario:  Add a new meal validate price
-    Given user is logged into application for Meal scenario
-    And user is on Meal page
-    When user populates all fields and for price types invalid value
-    Then the field price must be a number message is displayed
-    When user clicks Logs Off in Meal scenario
-    Then user is logged off successfully from Meal scenario
+Steps:
+
+1. Open browser and log into the application using method from LoginPage
+2. Click on Meal link
+3. Fill all mandatory fields and for price types invalid value
+4. Click on Add button
+5. Assert the field price must be a number message is displayed
+6. Log off from Restaurant
+7. Assert user is logged off from Meal page	and application
 
 **Homework:**
 
