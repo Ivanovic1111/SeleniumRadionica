@@ -164,6 +164,7 @@ Some of elements provided by framework:
 -  Link
 -  Upload
 
+
 **Task 1: Write test for add new Restaurant**  
 
 Steps:
