@@ -164,7 +164,7 @@ Some of elements provided by framework:
 -  Link
 -  Upload
 
-**Task 1: Write test for add new Restaurant based on scenario written in Workshop1**  
+**Task 1: Write test for add new Restaurant**  
 
     Scenario:  Add a new restaurant
     Given user is logged into application for Restaurant story
@@ -221,7 +221,7 @@ How to use it?
 		return getRestaurantNameTextField().mandatory(By.id("Name"), By.xpath("//*[@id='fsBig']//span[@data-valmsg-for='Name']"), "The Name field is required.");
 	}
 
-**Task 2: Write test to verify that Name of restaurant is mandatory based on scenario written in Workshop1**
+**Task 2: Write test to verify that Name of restaurant is mandatory**
 
     Scenario:  Add a new restaurant check name is mandatory
     Given user is logged into application for Restaurant story
@@ -249,7 +249,7 @@ Example:
 				By.id("Price"), sheetPath, sheetName, numOfSheetRows);
 	}
 
-**Task 3: Write test to validate price when add new meal based on scenario written in Workshop1**
+**Task 3: Write test to validate price when add new meal**
 
     Scenario:  Add a new meal validate price
     Given user is logged into application for Meal scenario
@@ -261,6 +261,6 @@ Example:
 
 **Homework:**
 
-1. Write test for add new active meal based on scenario from Workshop1
-2. Write test for edit restaurant based on scenario from Workshop1
-3. Write test for check phone number is mandatory when add a new restaurant based on scenario from Workshop1
+1. Write test for add new active meal
+2. Write test for edit restaurant
+3. Write test for check phone number is mandatory when add a new restaurant
