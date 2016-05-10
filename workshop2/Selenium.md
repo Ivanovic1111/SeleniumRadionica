@@ -1,20 +1,20 @@
 # Introducing Selenium
 **Selenium automates browsers.**
 
-Selenium is suite of software tools with purpose to satisfy different testing needs and to support test automation.  
+Selenium is a portable software testing framework for web applications. Its purpose is to satisfy different testing needs and to support test automation - in other words, is mainly used for for writing end-to-end tests for web applications.  
 
 It has four components:
 
-- Selenium IDE
-- Selenium Remote Control (RC)
-- Selenium WebDriver
-- Selenium Grid
+- Selenium IDE: a complete integrated development environment implemented as a Firefox Add-On, which allows recording, editing, and debugging tests without learning a test scripting language
+- Selenium Remote Control (RC): a server, written in Java, that accepts commands for the browser via HTTP. RC makes it possible to write automated tests for a web application in any programming language, which allows for better integration of Selenium in existing unit test frameworks
+- Selenium WebDriver: the successor to Selenium RC, it accepts commands and sends them to a browser and retrieves results
+- Selenium Grid: a server that allows tests to use web browser instances running on remote machines (in other words, allows running tests in parallel on multiple machines and to manage different browser versions and browser configurations centrally)
 
 ![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/SeleniumSuite.png)
 
 ## Selenium WebDriver architecture
 
-Selenium WebDriver architecture is divided into three parts:
+Selenium-WebDriver makes direct calls to the browser using each browser’s native support for automation. Since there are so many browsers & so many programming languages there is need for common specification which will be provided by WebDriver API. Each browser has to implement this API which is called as Remote WebDriver or Remote WebDriver Server. Selenium WebDriver architecture is divided into three parts:
 
 - Language bindings
 - Selenium WebDriver API
@@ -22,7 +22,13 @@ Selenium WebDriver architecture is divided into three parts:
 
 ![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/SeleniumWebdriverArchitecture.png)
 
+The language binding will send the commands across the common driver API, on the other end there is going to be a driver listening to those commands and they will be executed in browser using remote WebDriver and it’s going to return the result/response via API to the code/Binding.
+
+Actually whatever the commands issued in the code will be interpreted into Webservice methods and the Remote Driver will receive the HTTP request (commands) and execute them in the browser then send the response back.
+
 ## Locating UI elements (Web elements)
+In order to write UI tests with Selenium WebDriver you need to be able to identify web page elements fast and in an accurate way. Selenium WebDriver API supports different possibilities to identify elements: by ID, by CLASS, by NAME, by CSS selector, by XPath, by TAG name. Also you define your custom selector in order to interact with the elements.
+
 Each of the language expose a findElement and findElements method.
 
 The *find* method take a locator or query object called **By**. By strategies are listed below: 
