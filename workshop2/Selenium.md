@@ -10,7 +10,7 @@ It has four components:
 - Selenium WebDriver
 - Selenium Grid
 
-![](https://gitlab.levi9.com/qa/Code9-2015/raw/master/workshop2/img/SeleniumSuite.png)
+![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/SeleniumSuite.png)
 
 ## Selenium WebDriver architecture
 
@@ -20,7 +20,7 @@ Selenium WebDriver architecture is divided into three parts:
 - Selenium WebDriver API
 - Drivers
 
-![](https://gitlab.levi9.com/qa/Code9-2015/raw/master/workshop2/img/SeleniumWebdriverArchitecture.png)
+![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/SeleniumWebdriverArchitecture.png)
 
 ## Locating UI elements (Web elements)
 Each of the language expose a findElement and findElements method.
@@ -100,7 +100,7 @@ Page Object pattern is a design pattern popular in test automation for enhancing
 - Readable scripts
 - Support for different programming languages
 
-![](https://gitlab.levi9.com/qa/Code9-2015/raw/master/workshop2/img/pageobjectpattern.png)
+![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/pageobjectpattern.png)
 
 ## Basic rules of PO pattern
 
@@ -123,11 +123,11 @@ Main goals:
 
 Each layer of the framework only interacts with the layer immediately below it.
 
-![](https://gitlab.levi9.com/qa/Code9-2015/raw/master/workshop2/img/frameworkArchitecture.png)
+![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/frameworkArchitecture.png)
 
 # Architecture
 
-![](https://gitlab.levi9.com/qa/Code9-2015/raw/master/workshop2/img/isonArchitecture.png)
+![](https://gitlab.levi9.com/qa/Code9-2016/raw/master/workshop2/img/isonArchitecture.png)
 
 **Configuration layer**
 
