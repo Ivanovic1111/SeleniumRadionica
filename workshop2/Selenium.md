@@ -256,6 +256,12 @@ Steps:
 6. Log off from Restaurant
 7. Assert user is logged off from Meal page	and application
 
+**Login info**
+
+App url:  http://foodorderscode9.levi9.com
+username: code9fo
+password: foodcode9
+
 **Homework:**
 
 1. Write test for add new active meal
