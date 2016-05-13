@@ -39,7 +39,7 @@ For instance, consider this page source:
 	 </body>
     <html>
 
-The *form* elements can be located by using XPath expression:
+The *input* elements can be located by using XPath expression:
 
 - "/html/body/form/input[1]" - Absolute path (would break if the HTML was changed only slightly)
 
