@@ -270,9 +270,9 @@ Login info:
 
 Links
 ----
-http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (Java SE Development Kit 8 Downloads)
-http://www.seleniumhq.org/download/ (download JAR file and add it to Java Build Path via Add External JARS... command)
-https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG (determine compatible Firefox version, search for "Native events are now supported for the following Firefox versions")
-ftp://ftp.mozilla.org/pub/firefox/releases/ (Firefox versions FTP site)
-http://www.mkyong.com/maven/how-to-install-maven-in-windows/ (how to install Maven on Windows)
-http://www.eclipse.org/m2e/ (Maven support in the Eclipse IDE)
+- http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html (Java SE Development Kit 8 Downloads)
+- http://www.seleniumhq.org/download/ (download JAR file and add it to Java Build Path via Add External JARS... command)
+- https://github.com/SeleniumHQ/selenium/blob/master/java/CHANGELOG (determine compatible Firefox version, search for "Native events are now supported for the following Firefox versions")
+- ftp://ftp.mozilla.org/pub/firefox/releases/ (Firefox versions FTP site)
+- http://www.mkyong.com/maven/how-to-install-maven-in-windows/ (how to install Maven on Windows)
+- http://www.eclipse.org/m2e/ (Maven support in the Eclipse IDE)
