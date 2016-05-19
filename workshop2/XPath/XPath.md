@@ -6,7 +6,7 @@ You can use XPath to locate the element with:
 
 - absolute path (not advised)
 
-			    //html/body/form/input[2]
+			    /html/body/form/input[2]
 
 - relative path, to an element that does have an id or name attribute 
 
@@ -39,7 +39,7 @@ For instance, consider this page source:
 	 </body>
     <html>
 
-The *form* elements can be located by using XPath expression:
+The *input* elements can be located by using XPath expression:
 
 - "/html/body/form/input[1]" - Absolute path (would break if the HTML was changed only slightly)
 
