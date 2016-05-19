@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BasePageExampleTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="30.001">
+  <properties />
+  
+  
+            <testcase name="run" time="30.001" classname="com.levi9.ison.FINAL.tests.testngRunner" />
+      
+</testsuite>

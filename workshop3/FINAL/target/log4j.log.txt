@@ -1,0 +1,9 @@
+2016-05-17 14:49:31 INFO  JBehaveStoryEmbedderForTestNG:32 - configuration()
+2016-05-17 14:49:31 INFO  CommonSteps:42 - ProfileSetup: 
+2016-05-17 14:49:31 INFO  AbstractPropertiesHandler:44 - Loaded properties from location: properties/environment.properties
+2016-05-17 14:49:31 INFO  BaseTest:215 - Environment is set to: default
+2016-05-17 14:49:32 INFO  BaseTest:376 - Adding profile to firefox
+2016-05-17 14:49:32 INFO  BaseTest:267 - Initializing webdriver with firefox, , ANY
+2016-05-17 14:49:33 INFO  CommonSteps:45 - set up initialized
+2016-05-17 14:49:33 INFO  CommonSteps:46 - story begins...
+2016-05-17 14:50:01 INFO  CommonSteps:53 - story finished.

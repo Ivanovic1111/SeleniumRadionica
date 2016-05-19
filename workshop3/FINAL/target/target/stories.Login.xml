@@ -1,0 +1,42 @@
+<story path="stories/Login.story" title="Login story">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">use FoodOrders site</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">login into Foodorders site
+So that I can order food</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Successful login">
+<step outcome="successful">Given user is on Login page</step>
+<step outcome="successful">When user types username and password</step>
+<step outcome="successful">Then FoodOrders page opens</step>
+<step outcome="successful">When user clicks Logs Off in Login scenario</step>
+<step outcome="successful">Then user is logged off successfully from Login scenario</step>
+</scenario>
+<scenario keyword="Scenario:" title="Unsuccessful login">
+<step outcome="successful">Given user is on Login page</step>
+<step outcome="successful">When user types empty credentials</step>
+<step outcome="successful">Then user cannot order food</step>
+</scenario>
+<scenario keyword="Scenario:" title="Unsuccessful login - more cases">
+<examples keyword="Examples:">
+<step>Given user is on Login page</step>
+<step>When user populates &lt;username&gt; and &lt;password&gt;</step>
+<step>Then user cannot order food</step>
+<parameters>
+<names><name>username</name><name>password</name></names>
+<values><value>code9fo</value><value></value></values>
+<values><value></value><value>foodcode9</value></values>
+</parameters>
+
+<example keyword="Example:">{username=code9fo, password=}</example>
+<step outcome="successful">Given user is on Login page</step>
+<step outcome="successful">When user populates <parameter>code9fo</parameter> and <parameter></parameter></step>
+<step outcome="successful">Then user cannot order food</step>
+
+<example keyword="Example:">{username=, password=foodcode9}</example>
+<step outcome="successful">Given user is on Login page</step>
+<step outcome="successful">When user populates <parameter></parameter> and <parameter>foodcode9</parameter></step>
+<step outcome="successful">Then user cannot order food</step>
+</examples>
+</scenario>
+</story>

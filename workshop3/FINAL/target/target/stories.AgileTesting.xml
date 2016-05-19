@@ -1,0 +1,31 @@
+<story path="stories/AgileTesting.story" title="Agile testing story">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">read about agile testing on Levi9 site</inOrderTo>
+  <asA keyword="As a">user</asA>
+  <iWantTo keyword="I want to">open Levi9 site and click on Agile Testing in Services menu
+So that I can read about Why you should choose Levi9</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Agile testing story">
+<step outcome="pending" keyword="PENDING">Given user opens application</step>
+<step outcome="pending" keyword="PENDING">When user clicks on Services menu and Agile Testing</step>
+<step outcome="pending" keyword="PENDING">Then user is on Agile Testing page</step>
+<pendingMethod>@Given(&quot;user opens application&quot;)
+@Pending
+public void givenUserOpensApplication() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;user clicks on Services menu and Agile Testing&quot;)
+@Pending
+public void whenUserClicksOnServicesMenuAndAgileTesting() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;user is on Agile Testing page&quot;)
+@Pending
+public void thenUserIsOnAgileTestingPage() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

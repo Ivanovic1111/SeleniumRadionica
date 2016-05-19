@@ -1,0 +1,55 @@
+<div class="story">
+<h1>Login story</h1>
+<div class="path">stories/Login.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> use FoodOrders site</div>
+<div class="element asA"><span class="keyword asA">As a</span> user</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> login into Foodorders site
+So that I can order food</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Successful login</h2>
+<div class="step successful">Given user is on Login page</div>
+<div class="step successful">When user types username and password</div>
+<div class="step successful">Then FoodOrders page opens</div>
+<div class="step successful">When user clicks Logs Off in Login scenario</div>
+<div class="step successful">Then user is logged off successfully from Login scenario</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Unsuccessful login</h2>
+<div class="step successful">Given user is on Login page</div>
+<div class="step successful">When user types empty credentials</div>
+<div class="step successful">Then user cannot order food</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Unsuccessful login - more cases</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given user is on Login page</div>
+<div class="step">When user populates &lt;username&gt; and &lt;password&gt;</div>
+<div class="step">Then user cannot order food</div>
+<table>
+<thead>
+<tr>
+<th>username</th><th>password</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>code9fo</td><td></td></tr>
+<tr>
+<td></td><td>foodcode9</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {username=code9fo, password=}</h3>
+<div class="step successful">Given user is on Login page</div>
+<div class="step successful">When user populates <span class="step parameter">code9fo</span> and <span class="step parameter"></span></div>
+<div class="step successful">Then user cannot order food</div>
+
+<h3 class="example">Example: {username=, password=foodcode9}</h3>
+<div class="step successful">Given user is on Login page</div>
+<div class="step successful">When user populates <span class="step parameter"></span> and <span class="step parameter">foodcode9</span></div>
+<div class="step successful">Then user cannot order food</div>
+</div>
+</div>
+</div>
