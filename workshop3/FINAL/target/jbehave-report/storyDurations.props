@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue May 10 09:38:57 CEST 2016
+threads=1
+total=14000
+stories/AgileTesting.story=14000
+threadAverage=14000

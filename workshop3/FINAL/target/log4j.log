@@ -1,0 +1,8 @@
+2016-05-10 09:38:36 INFO  JBehaveStoryEmbedderForTestNG:31 - configuration()
+2016-05-10 09:38:36 INFO  CommonSteps:42 - ProfileSetup: 
+2016-05-10 09:38:36 INFO  AbstractPropertiesHandler:44 - Loaded properties from location: properties/environment.properties
+2016-05-10 09:38:36 INFO  BaseTest:215 - Environment is set to: default
+2016-05-10 09:38:36 INFO  BaseTest:278 - Initializing webdriver with chrome, , ANY
+2016-05-10 09:38:42 INFO  CommonSteps:45 - set up initialized
+2016-05-10 09:38:42 INFO  CommonSteps:46 - story begins...
+2016-05-10 09:38:59 INFO  CommonSteps:53 - story finished.

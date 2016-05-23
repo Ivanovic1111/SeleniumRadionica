@@ -1,0 +1,31 @@
+Agile testing story
+(stories/AgileTesting.story)
+Narrative:
+In order to read about agile testing on Levi9 site
+As a user
+I want to open Levi9 site and click on Agile Testing in Services menu
+So that I can read about Why you should choose Levi9
+Scenario: Agile testing story
+Given user opens application (PENDING)
+When user clicks on Services menu and Agile Testing (PENDING)
+Then user is on Agile Testing page (PENDING)
+@Given("user opens application")
+@Pending
+public void givenUserOpensApplication() {
+  // PENDING
+}
+
+@When("user clicks on Services menu and Agile Testing")
+@Pending
+public void whenUserClicksOnServicesMenuAndAgileTesting() {
+  // PENDING
+}
+
+@Then("user is on Agile Testing page")
+@Pending
+public void thenUserIsOnAgileTestingPage() {
+  // PENDING
+}
+
+
+

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Code9 2016" thread-count="2" verbose="1" annotations="JDK">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Code9-2016" junit="false" preserve-order="true">
+		<parameter name="profile" value="${chrome.profile}" />
+		<classes>
+			<class name="com.levi9.ison.FoodOrdersISON.tests.LoginTest"></class>
+			<class name="com.levi9.ison.FoodOrdersISON.tests.BackToDailyMenuTest"></class>
+			<class name="com.levi9.ison.FoodOrdersISON.tests.AddRecommendation"></class>
+	
+		</classes>
+	</test>
+</suite>
