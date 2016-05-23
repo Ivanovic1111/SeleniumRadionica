@@ -1,15 +1,15 @@
 package com.levi9.ison.FoodOrdersISON.steps;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.Properties;
-import java.util.Random;
-
 import com.levi9.ison.FoodOrdersISON.pages.Header;
 import com.levi9.ison.FoodOrdersISON.pages.LoginPage;
 import com.levi9.ison.FoodOrdersISON.pages.NewMeal;
 import com.levi9.ison.propertieshandlers.AbstractPropertiesHandler;
+
+import java.util.Properties;
+import java.util.Random;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class MealSteps extends CommonSteps {
 
@@ -32,7 +32,7 @@ public class MealSteps extends CommonSteps {
 	private LoginPage loginPage;
 	private Header header;
 	private NewMeal newMealPage;
-	
+
 	public void logIn() {
 		driver.manage().deleteAllCookies();
 		loginPage = new LoginPage(driver);
@@ -40,14 +40,14 @@ public class MealSteps extends CommonSteps {
 		assertTrue(loginPage.isLoaded());
 		homePage = loginPage.login(username, password);
 	}
-	
+
 	public void openAddMealPage() {
 		header = new Header(driver);
 		newMealPage = header.clickAddNewMealHeaderLink();
 		assertTrue(newMealPage.isMealPageLegendDisplayed(), "Meal legend is not displayed on AddNewMeal page.");
 
 	}
-	
+
 	public void addNewActiveMeal() {
 		newMealPage.populateNewMealFields(name, price, description);
 		newMealPage.addNewMeal();
@@ -57,20 +57,20 @@ public class MealSteps extends CommonSteps {
 		newMealPage.clickRBrSort();
 		assertEquals(newMealPage.getNameOfFirstMealInTable(), name, "Created meal is not in the table.");
 	}
-	
+
 	public void validatePrice() {
 		validatePrice = newMealPage.validatePrice(sheetPath,sheetName,numOfSheetRows);
 	}
-	
+
 	public void checkValidate() {
 		assertTrue(validatePrice, "Price format is not valid.");
 	}
-	
+
 	public void userLogOff(){
 		header = new Header(driver);
         loginPage = header.clickLogOff();
    	}
-	
+
 	public void verifyUserLoggedOff (){
 		assertTrue(loginPage.isLoggedOff(), "User is not logged off.");
 	}

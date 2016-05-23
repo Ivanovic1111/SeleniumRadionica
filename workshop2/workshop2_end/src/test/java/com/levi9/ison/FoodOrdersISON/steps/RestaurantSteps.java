@@ -1,16 +1,16 @@
 package com.levi9.ison.FoodOrdersISON.steps;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.Properties;
-import java.util.Random;
-
 import com.levi9.ison.FoodOrdersISON.pages.Header;
 import com.levi9.ison.FoodOrdersISON.pages.LoginPage;
 import com.levi9.ison.FoodOrdersISON.pages.RestaurantPage;
 import com.levi9.ison.helpers.WaitHelper;
 import com.levi9.ison.propertieshandlers.AbstractPropertiesHandler;
+
+import java.util.Properties;
+import java.util.Random;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class RestaurantSteps extends CommonSteps {
 	
@@ -39,7 +39,7 @@ public class RestaurantSteps extends CommonSteps {
 	private LoginPage loginPage;
 	private RestaurantPage restaurantPage;
 	private Header header;
-	
+
 	public void logIn() {
 		driver.manage().deleteAllCookies();
 		loginPage = new LoginPage(driver);
@@ -47,7 +47,7 @@ public class RestaurantSteps extends CommonSteps {
 		assertTrue(loginPage.isLoaded(), "Application is not opened.");
 		homePage = loginPage.login(username, password);
 	}
-	
+
 	public void openRestaurantPage() {
 		header = new Header(driver);
 		restaurantPage = header.clickRestaurantHeaderLink();
@@ -55,52 +55,52 @@ public class RestaurantSteps extends CommonSteps {
 		assertTrue(restaurantPage.isRestaurantPageLegendDisplayed(), "Restaurant legend is not displayed on restaurant page");
 
 	}
-	
+
 	public void createRestaurant() {
 		restaurantPage.populateNewRestaurantFields(true, name, phoneNumber, phoneNumber2, adress, contactPerson, numberOfMealForDeliver, numberOfMealForDiscount);
 		restaurantPage.clickAddNewRestaurantButton();
 		restaurantPage.clickRBrSort();
 		
 	}
-	
+
 	public void verifyCreatedRestaurant() {
 		assertEquals(restaurantPage.getNameOfFirstRestaurantInTable(), name, "Restaurant is not created.");
 	}
-	
+
 	public void selectRestaurant() {
 		restaurantPage.doubleClickOnNewlyAddedRestaurant();
 		
 	}
-	
+
 	public void editRestaurant() {
 		restaurantPage.editNewRestaurantFields(false, newName, newPhoneNumber, newPhoneNumber2, newAdress, newContactPerson, newNumberOfMealForDeliver, newNumberOfMealForDiscount);
 		restaurantPage.clickRBrSort();
 	}
-	
+
 	public void verifyEditedRestaurant() {
 		assertEquals(restaurantPage.getNameOfFirstRestaurantInTable(), newName, "Restaurant is not edited.");
 	}
-	
+
 	public void addRestaurantWithoutName() {
 		restaurantPage.setNewRestaurantFieldsNameMandatory(phoneNumber, phoneNumber2, adress, contactPerson, numberOfMealForDeliver, numberOfMealForDiscount);
 	}
-	
+
 	public void checkRestaurantMandatoryName() {
 		assertTrue(restaurantPage.checkIsNameEmpty(), "Name is not mandatory.");
 	}
-	
+
 	public void addRestaurantWithoutPhoneNumber() {
 		restaurantPage.setNewRestaurantFieldsPhoneNumberMandatory(name, phoneNumber2, adress, contactPerson, numberOfMealForDeliver, numberOfMealForDiscount);
 	}
-	
+
 	public void checkRestaurantPhoneNumber() {
 		assertTrue(restaurantPage.checkIsPhoneNumberEmpty(), "Phone Number is not mandatory.");
 	}
-	
+
 	public void userLogOff(){
 		loginPage = header.clickLogOff();
     }
-	
+
 	public void verifyUserLoggedOff (){
 		assertTrue(loginPage.isLoggedOff(), "User is not logged off.");
 	}

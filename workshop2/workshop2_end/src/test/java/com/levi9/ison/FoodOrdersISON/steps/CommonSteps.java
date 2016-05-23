@@ -38,7 +38,7 @@ public class CommonSteps extends BaseTest implements IInvokedMethodListener {
 	public String getProfileAttribute() {
 		return profileAttribute;
 	}
-	
+
 	public void setUp() {
 	  LOGGER.info ("ProfileSetup " + getProfileAttribute());
 	  super.setUp(getProfileAttribute());
@@ -46,7 +46,7 @@ public class CommonSteps extends BaseTest implements IInvokedMethodListener {
 	  LOGGER.info("set up initialized");
 	  LOGGER.info("story begins...");
 	}
-		
+
 	public void closeDriver() throws Exception {
 		super.tearDown();
 		LOGGER.info("story finished.");
