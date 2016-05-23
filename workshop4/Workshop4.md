@@ -88,8 +88,11 @@ There are two types of version control systems
 - If project contains many large files that cannot be easily compressed, the space needed to store all versions of these files can accumulate quickly.
 - If project has a very long history, downloading the entire history can take an impractical amount of time and disk space.
 
-**Git** is one of the most popular distributed version control systems. These systems do not necessarily rely on a central server to store all the versions of a project’s files. Instead, developers clone a copy of a repository and has the full history of the project on their own hard drive.
+**Git** is one of the most popular distributed version control systems. It has three main states that files can reside in: committed, modified and staged. 
 
+- Committed means that data is safely stored in local database. 
+- Modified means that there are changes in file but have not committed it to database. 
+- Staged means the file is marked as modified in current version and ready to go into next commit snapshot. 
 
 ![](https://git-scm.com/images/about/index1@2x.png)
 
@@ -102,12 +105,43 @@ update
 
 ###Continuous Delivery – automated tests as part of the deployment pipeline:
 
-#todo
+Continuous Delivery meaning that we are able to deploy changes to production in a continuous on the fastest possible time. To reach that we need to have:
+
+
+- Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. 
+- Continuous Deployment (CD) the time elapsed between development writing one new line of code and this new code being used by live users, in production.
+- Continuous Test Automation (CT) is a practice that encourages and aligns with the overall Continuous Delivery process.
+
+![](http://www.seleniumframework.com/wp-content/uploads/2014/12/continuous_delivery.png)
+
+Test Automation should be done **continuously**. 
+
+Traditionally mindset:
+
+- only for regression
+- wait until manual test cases are written and then automate them 
+
+Continuous Test Automation mindset:
+
+- Automation should be started even before source code exists 
+- Acceptance test driven development – ATDD
+- Behavior Test driven development – BDD
+- Test driven development – TDD
+
+To summarize, Continuous Test Automation encompasses all(any) of the following:
+
+
+1. Continuously Test Automate
+2. With rapidly changing application, Continuous Test Automation is necessary
+3. Continuous Test Automation aligns with Continuous Delivery Model (CI/CD/CT)
 
 **The benefits:**
 
-- Often automatic deployments
+- Test often 
+- Automatic deployments
 - Fast feedback
+- Build quality
+- Reduce cost, time and risk
 
 
 ###Jenkins
