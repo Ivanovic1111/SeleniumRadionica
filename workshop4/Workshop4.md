@@ -1,8 +1,8 @@
-###Basic concepts
+# Basic concepts #
 - Running Tests via Selenium Grid
 - Modern SW development
 
-###Cross browser testing
+# Cross browser testing #
 Selenium supports cross browser testing. Cross browser testing is a type of functional test to check that application under test works as expected in different browsers.
 
 ![](http://i66.tinypic.com/2expi7b.png)
@@ -15,7 +15,7 @@ Task 1: Run your tests on Chrome or Firefox
 
 Task 2: Setup Maven profile and running tests.
 
-How to do it:
+*How to do it:*
 
 Change @BeforeMethod.
 
@@ -29,13 +29,13 @@ Add parameter in testng.xml file
 
     <parameter name="profile" value="${chrome.profile}" />
 
-Run with tests with next command:
+Run tests with next command:
 
     mvn clean install
 
-### Selenium Grid
+# Selenium Grid #
 
-Selenium-Grid allows you run your tests on different machines against different browsers in parallel.
+Selenium-Grid allows you to run your tests on different machines against different browsers in parallel.
 
 ![](http://image.slidesharecdn.com/seleniumcamp2015-andriisoldatenko-150301061521-conversion-gate01/95/seleniumcamp-2015-andrii-soldatenko-17-638.jpg?cb=1425190669)
 
