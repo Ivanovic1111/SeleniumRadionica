@@ -54,7 +54,7 @@ Benefits:
 
 Task 3: Configure Selenium Grid on your machine.
 
-How to do it:
+*How to do it:*
 
 1. Install Selenium hub using provided command
 2. Register Selenium node using provided command
@@ -63,11 +63,11 @@ How to do it:
 
 `mvn clean install -Premote`
 
-###Software Development Life Cycle
+# Software Development Life Cycle #
 
 ![](http://www.itsmonkie.co.uk/wp-content/uploads/2015/03/1.png)
  
-###Version control software - Git
+# Version control software - Git #
 
 There are two types of version control systems
 
@@ -96,14 +96,14 @@ There are two types of version control systems
 
 ![](https://git-scm.com/images/about/index1@2x.png)
 
-How to do it:
+*How to do it:*
 update
 
-1. Create own repository on gitlab 
+1. Create own repository on GitLab 
 2. Push new code
 3. Add new files, edit existing (work in pair)
 
-###Continuous Delivery – automated tests as part of the deployment pipeline:
+## Continuous Delivery – automated tests as part of the deployment pipeline: ##
 
 Continuous Delivery meaning that we are able to deploy changes to production in a continuous on the fastest possible time. To reach that we need to have:
 
@@ -144,26 +144,26 @@ To summarize, Continuous Test Automation encompasses all(any) of the following:
 - Reduce cost, time and risk
 
 
-###Jenkins
+# Jenkins #
 
 Jenkins is most popular continuous integration tool. It is highly extensible open source web based java tool.
 
-####Where Jenkins fits in
+## Where Jenkins fits in ##
 
 Allow us to organize CI flow.
 
 ![](http://i66.tinypic.com/i4mo7p.png)
 
-Prerequisites:
+### Prerequisites: ###
 
 - Installed Java 1.5 or higher
 - Java in path (optional but preferred)
 
 Task 4: Install Jenkins, create job and execute tests via Jenkins
 
-How to do it? 
+*How to do it?* 
 
-###Team City
+# Team City #
 
 Commercial java based software for continuous integration. 
 
