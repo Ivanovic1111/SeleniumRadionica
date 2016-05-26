@@ -38,7 +38,8 @@ Run tests with next command:
 
 Selenium-Grid allows you to run your tests on different machines against different browsers in parallel.
 
-![](img\UseSeleniumGrid.jpg)
+![](img\UseSeleniumGrid.png)
+
 
 Benefits:
 
