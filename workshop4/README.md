@@ -18,6 +18,17 @@ Task 2: Setup Maven profile and running tests.
 
 *How to do it:*
 
+Add remote profile to pom file:
+
+    <profile>
+			<id>remote</id>
+			<properties>
+				<firefox.profile>remote-firefox</firefox.profile>
+				<chrome.profile>remote-chrome</chrome.profile>
+				<ie.profile>remote-internetexplorer</ie.profile>
+			</properties>
+		</profile>
+
 Change @BeforeMethod.
 
     @BeforeMethod
@@ -52,7 +63,7 @@ Benefits:
 
 **Selenium Node**
 
-    java -jar selenium-server-standalone-ver.jar -role webdriver -hub http://servername:port/grid/register -port 5555 -Dwebdriver.chrome.driver=path\chromedriver.exe -Dwebdriver.ie.driver=path\IEDriverServer.exe
+    java -jar selenium-server-standalone-ver.jar -role webdriver -hub http://servername:port/grid/register -port 5555 -Dwebdriver.chrome.driver=path\chromedriver.exe
 
 Task 3: Configure Selenium Grid on your machine.
 
@@ -105,7 +116,7 @@ There are two types of version control systems
 
 
 *How to do it:*
-update
+
 
 1. Create own repository on GitLab 
 2. Push new code
@@ -180,3 +191,7 @@ Commercial java based software for continuous integration.
 Task 5: Install TeamCity and create job.
 
 Task 6: Trigger job in specific time (Jenkins or TeamCity)
+
+Task 7: Setup project to run on Firefox and Chrome in parallel
+
+Task 8: Run test on Internet Explorer
