@@ -7,7 +7,6 @@ Selenium supports cross browser testing. Cross browser testing is a type of func
 
 ![](img/SeleniumGrid.jpg)
 
-
 Using Selenium Web Driver we can automate test cases using all available browsers.
 
 In order to achieve automatically execution tests on different browsers we are using **maven profiles**.
@@ -38,7 +37,7 @@ Run tests with next command:
 
 Selenium-Grid allows you to run your tests on different machines against different browsers in parallel.
 
-![](img/UseSeleniumGrid.jpg)
+![](img/useSeleniumGrid.jpg)
 
 
 Benefits:
@@ -73,9 +72,9 @@ Task 3: Configure Selenium Grid on your machine.
 
 There are two types of version control systems
 
-![](img/Centralized.png)
+![](img/centralized.png)
 
-![](img/Distributed.png)
+![](img/distributed.png)
 
 
 **Advantages** over centralized systems:
@@ -120,7 +119,7 @@ Test Automation should be done **continuously**.
 
 Traditionally mindset:
 
-- only for regression
+- only for regressionS
 - wait until manual test cases are written and then automate them 
 
 Continuous Test Automation mindset:
