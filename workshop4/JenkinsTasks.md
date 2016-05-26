@@ -26,8 +26,3 @@
 **- Schedule job to run every day at 21:13 pm**
 
     13 21 * * *
-
-
-zadatak ranovati chrome i ff paralelno
-
-ubaciti za remote profile u pom file
