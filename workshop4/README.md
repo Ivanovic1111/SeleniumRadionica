@@ -66,13 +66,17 @@ Task 3: Configure Selenium Grid on your machine.
 
 # Software Development Life Cycle #
 
+
 ![](img\LCSD.png)
+
  
 # Version control software - Git #
 
 There are two types of version control systems
 
+
 ![](img\Centralized.png)
+
 
 ![](img\Distributed.png)
 
@@ -95,7 +99,9 @@ There are two types of version control systems
 - Modified means that there are changes in file but have not committed it to database. 
 - Staged means the file is marked as modified in current version and ready to go into next commit snapshot. 
 
+
 ![](img\Repository.png)
+
 
 *How to do it:*
 update

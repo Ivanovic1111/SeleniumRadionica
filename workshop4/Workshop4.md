@@ -40,6 +40,7 @@ Selenium-Grid allows you to run your tests on different machines against differe
 
 ![](img\UseSeleniumGrid.jpg)
 
+
 Benefits:
 
 - Test execution on different browsers and browser versions, operating systems, etc. in the same time
