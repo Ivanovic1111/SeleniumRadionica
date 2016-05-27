@@ -12,13 +12,19 @@ Using Selenium Web Driver we can automate test cases using all available browser
 
 In order to achieve automatically execution tests on different browsers we are using **maven profiles**.
 
-Task 1: Run your tests on Chrome or Firefox
+Task 1: Run your tests on Firefox
+
+Setup chrome webdriver variable 
+
+    name = webdriver.chrome.driver
+    
+    value = C:\path\chromedriver.exe
 
 Task 2: Setup Maven profile and running tests.
 
 *How to do it:*
 
-Add remote profile to pom file:
+Add remote profiles to pom file:
 
     <profile>
 			<id>remote</id>
@@ -27,9 +33,9 @@ Add remote profile to pom file:
 				<chrome.profile>remote-chrome</chrome.profile>
 				<ie.profile>remote-internetexplorer</ie.profile>
 			</properties>
-		</profile>
+	</profile>
 
-Change @BeforeMethod.
+Change @BeforeMethod in your test.
 
     @BeforeMethod
     @Parameters({"profile"})

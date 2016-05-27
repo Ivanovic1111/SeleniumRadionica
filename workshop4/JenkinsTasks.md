@@ -1,5 +1,3 @@
-# Jenkins #
-
 **- Install Jenkins as a Windows service**
 
     java -jar jenkins.war
