@@ -49,7 +49,7 @@ Run tests with next command:
 
 Selenium-Grid allows you to run your tests on different machines against different browsers in parallel.
 
-![](img\UseSeleniumGrid.png)
+![](img/UseSeleniumGrid.png)
 
 
 Benefits:
@@ -79,7 +79,7 @@ Task 3: Configure Selenium Grid on your machine.
 # Software Development Life Cycle #
 
 
-![](img\LCSD.png)
+![](img/LCSD.png)
 
  
 # Version control software - Git #
@@ -87,10 +87,10 @@ Task 3: Configure Selenium Grid on your machine.
 There are two types of version control systems
 
 
-![](img\Centralized.png)
+![](img/Centralized.png)
 
 
-![](img\Distributed.png)
+![](img/Distributed.png)
 
 
 **Advantages** over centralized systems:
@@ -112,7 +112,7 @@ There are two types of version control systems
 - Staged means the file is marked as modified in current version and ready to go into next commit snapshot. 
 
 
-![](img\Repository.png)
+![](img/Repository.png)
 
 
 *How to do it:*
@@ -131,7 +131,7 @@ Continuous Delivery meaning that we are able to deploy changes to production in 
 - Continuous Deployment (CD) the time elapsed between development writing one new line of code and this new code being used by live users, in production.
 - Continuous Test Automation (CT) is a practice that encourages and aligns with the overall Continuous Delivery process.
 
-![](img\CD.png)
+![](img/CD.png)
 
 Test Automation should be done **continuously**. 
 
@@ -171,7 +171,7 @@ Jenkins is most popular continuous integration tool. It is highly extensible ope
 
 Allow us to organize CI flow.
 
-![](img\Jenkins.jpg)
+![](img/Jenkins.jpg)
 
 ### Prerequisites: ###
 
@@ -186,7 +186,7 @@ Task 4: Install Jenkins, create job and execute tests via Jenkins
 
 Commercial java based software for continuous integration. 
 
-![](img\TeamCity.png)
+![](img/TeamCity.png)
 
 Task 5: Install TeamCity and create job.
 
