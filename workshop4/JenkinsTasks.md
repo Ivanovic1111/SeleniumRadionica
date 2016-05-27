@@ -7,7 +7,7 @@
 **- Check is it working http://localhost:8080/**
 
 
-![](img\ManageJenkins.png)
+![](img/ManageJenkins.png)
 
 
 **- Go to View Local Services and check if Jenkins is running**
