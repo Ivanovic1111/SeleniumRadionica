@@ -87,10 +87,10 @@ Task 3: Configure Selenium Grid on your machine.
 There are two types of version control systems
 
 
-![](img/Centralized.png)
+![](img/centralized.png)
 
 
-![](img/Distributed.png)
+![](img/distributed.png)
 
 
 **Advantages** over centralized systems:
