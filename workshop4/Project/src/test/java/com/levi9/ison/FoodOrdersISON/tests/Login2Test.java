@@ -16,9 +16,9 @@ import com.levi9.ison.helpers.WaitHelper;
 import com.levi9.ison.propertieshandlers.AbstractPropertiesHandler;
 import com.levi9.ison.tests.BaseTest;
 
-public class LoginTest extends BaseTest { 
+public class Login2Test extends BaseTest { 
 	
-	private static final Logger LOGGER = Logger.getLogger(LoginTest.class);
+	private static final Logger LOGGER = Logger.getLogger(Login2Test.class);
 	Properties loginProperties = AbstractPropertiesHandler.loadCurrentThreadProperties("properties/data.properties");
 	 
 	private String username = loginProperties.getProperty("valid.username"); //"code9fo";
@@ -48,7 +48,6 @@ public class LoginTest extends BaseTest {
 
 	@AfterMethod
 	public void closeDriver() throws Exception {
-		LOGGER.info("Closing test...");
 		super.tearDown();
 	}
 }
